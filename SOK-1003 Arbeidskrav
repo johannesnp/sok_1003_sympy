@@ -1,0 +1,1751 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3b56eeb5-6857-45e2-907e-99b722128468",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "837d78c4-5984-449b-9445-488b3671266f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import sympy as sp"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "897f01da-fb1c-48f5-af7e-66581e61458d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{x: -1, y: 2}"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Oppgave 15, 1a\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(2*x+4*y,6),\n",
+    "    sp.Eq(-2*x+y, 4)\n",
+    "]\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "482427c3-dc0b-4b82-9d50-ac258ecd4e91",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[{x: -1, y: -1}, {x: 2, y: 5}]"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1b\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(2*x-y,-1),\n",
+    "    sp.Eq(x**2+x-y,1)\n",
+    "]\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "d1354caa-4446-4a53-9347-4399b12fc041",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{x: 4, y: 0}"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2b\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(3*x-12,-6*y),\n",
+    "    sp.Eq(4*x-8*y,16)\n",
+    "]\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "c4c78dae-974a-4de2-b99d-224e18ed8a90",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[{x: -15/2, y: 31/4}, {x: 2, y: 3}]"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2b\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(x**2+4*x-3,3*y),\n",
+    "    sp.Eq(2*y,8-x)\n",
+    "]\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "313caa76-7928-4a22-adba-4562f7bd7d8d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{x: 2, y: 2}"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Oppgave 16\n",
+    "#1a\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(4*x+2*y,12),\n",
+    "    sp.Eq(6*x-2*y,8)\n",
+    "]\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "497af6b0-59dd-47f5-83b4-6d54246cd932",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[{x: 0, y: -5}, {x: 12, y: 1}]"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1b\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(2*x+y**2,25),\n",
+    "    sp.Eq(x-2*y,10)\n",
+    "]\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "91720149-b586-474d-9416-8338ea11870b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{x: 4, y: 2}"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2a\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(4*x-4*y,8),\n",
+    "    sp.Eq(9*x-5*y,26)\n",
+    "]\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "231eb9fb-b2bd-4bb6-a063-eacd9fe4b756",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{x: 4, y: 2}"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2b\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(4*x-4*y,8),\n",
+    "    sp.Eq(9*x-5*y,26)\n",
+    "]\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "e88a1014-d570-4588-927a-c78ab74a36e8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[{x: 0, y: -4}, {x: 0, y: 4}, {x: 15, y: -1}, {x: 15, y: 1}]"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Oppgave 17\n",
+    "#1a\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(x*y**2-x,0),\n",
+    "    sp.Eq(x+y**2,16)\n",
+    "]\n",
+    "\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "e1f7b957-c17c-4774-8ca2-df992aae43bc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[{x: -10, y: 0},\n",
+       " {x: -6, y: -8},\n",
+       " {x: -6, y: 8},\n",
+       " {x: 6, y: -8},\n",
+       " {x: 6, y: 8},\n",
+       " {x: 10, y: 0}]"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1b\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(x**2+y**2,100),\n",
+    "    sp.Eq(x**2*y-36*y,0)\n",
+    "]\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "2b112d5b-1b17-49bb-bbb4-1566d08b6046",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[{x: -3, y: -7},\n",
+       " {x: -3, y: 7},\n",
+       " {x: 0, y: -sqrt(58)},\n",
+       " {x: 0, y: sqrt(58)},\n",
+       " {x: 3, y: -7},\n",
+       " {x: 3, y: 7}]"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2a\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(x*y**2-49*x,0),\n",
+    "    sp.Eq(x**2+y**2,58)\n",
+    "]\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "834d68ae-ad39-4afa-81e1-1ae885d055fd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[{x: -1.11803398874989, y: 0.0},\n",
+       " {x: -0.500000000000000, y: -1.00000000000000},\n",
+       " {x: -0.500000000000000, y: 1.00000000000000},\n",
+       " {x: 1.11803398874989, y: 0.0}]"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2b\n",
+    "\n",
+    "x, y = sp.symbols(\"x y\")\n",
+    "unknown = [x,y]\n",
+    "eq_a = [\n",
+    "    sp.Eq(x**2+y**2,(5/4)),\n",
+    "    sp.Eq(2*x*y+y,0)\n",
+    "]\n",
+    "sp.solve(eq_a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "dbd18615-8d75-4c0a-8e88-19dd6c66b0e6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 5 x^{4}$"
+      ],
+      "text/plain": [
+       "5*x**4"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Oppgave 19\n",
+    "#1a\n",
+    "\n",
+    "sp.diff(x**5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "51a71727-ada4-4535-87cc-1a55afa427a5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 1$"
+      ],
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1b\n",
+    "\n",
+    "sp.diff(x+12)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "eaeede8e-22c0-49bb-9257-ffcf2d0e6350",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 3 x^{2} + 8 x$"
+      ],
+      "text/plain": [
+       "3*x**2 + 8*x"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1c\n",
+    "\n",
+    "sp.diff(x**3+4*x**2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "11c7fe49-ed2d-4a4b-bdf0-0f2244aaaf4c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 6 x^{2}$"
+      ],
+      "text/plain": [
+       "6*x**2"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1d\n",
+    "\n",
+    "sp.diff(2*x**3+sp.sqrt(36))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "11cb21ea-fc6e-4f5c-a141-05e49f0d439d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{1}{2 \\sqrt{x}}$"
+      ],
+      "text/plain": [
+       "1/(2*sqrt(x))"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1e\n",
+    "\n",
+    "sp.diff(sp.sqrt(x)+5**2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "bde5d9a5-3e59-4eba-aed3-d585a2767eb0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 3 x^{2} - \\frac{1}{x^{2}}$"
+      ],
+      "text/plain": [
+       "3*x**2 - 1/x**2"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1f\n",
+    "\n",
+    "sp.diff(x**3+(1/x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "4eeca417-634c-49cd-815d-c11d2b37aa42",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 3 x^{2} - 2 x + 0.25$"
+      ],
+      "text/plain": [
+       "3*x**2 - 2*x + 0.25"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1g\n",
+    "\n",
+    "sp.diff(x**3-x**2+(1/4)*x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "1c162cf3-34de-435a-a13d-b90acca726dd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 36 x^{5} - \\frac{1}{x^{2}}$"
+      ],
+      "text/plain": [
+       "36*x**5 - 1/x**2"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2a\n",
+    "\n",
+    "sp.diff((1/x)+6*x**6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "7287bb93-812b-4355-bd77-3d372812ef5c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 1.5 x^{2} - 1$"
+      ],
+      "text/plain": [
+       "1.5*x**2 - 1"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2b\n",
+    "\n",
+    "sp.diff(-x+(1/2)*x**3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "63f1ddcd-ed3f-44b7-b4ab-bb32bdc80f50",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle x^{2} + x \\left(2 x + 2\\right) + 2 x - 3$"
+      ],
+      "text/plain": [
+       "x**2 + x*(2*x + 2) + 2*x - 3"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2c\n",
+    "\n",
+    "sp.diff(x*(x**2+2*x-3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "66d26119-acdb-490c-9ea7-0ed628640571",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 9 x^{8}$"
+      ],
+      "text/plain": [
+       "9*x**8"
+      ]
+     },
+     "execution_count": 54,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Oppgave 20\n",
+    "#1e\n",
+    "\n",
+    "sp.diff(x**4*x**5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "af62dac0-59bd-4a1c-a7f7-7a4cdba57899",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{3 \\sqrt{x}}{2}$"
+      ],
+      "text/plain": [
+       "3*sqrt(x)/2"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1f\n",
+    "\n",
+    "sp.diff(x*sp.sqrt(x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "5555cc16-6ecf-4e5c-b23e-829744cd0569",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle - \\frac{6}{x^{4}}$"
+      ],
+      "text/plain": [
+       "-6/x**4"
+      ]
+     },
+     "execution_count": 58,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1g\n",
+    "\n",
+    "sp.diff(2/x**3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "efa21f23-ebd8-43e8-8db1-d426c095f24f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{2}{x^{2}} - \\frac{3 \\left(x^{2} - 2\\right)}{x^{4}}$"
+      ],
+      "text/plain": [
+       "2/x**2 - 3*(x**2 - 2)/x**4"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1h\n",
+    "\n",
+    "sp.diff((x**2-2)/(x**3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "fef84b4b-2c5d-45fd-9ba9-6d4b347cb064",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{13 x^{\\frac{11}{2}}}{2}$"
+      ],
+      "text/plain": [
+       "13*x**(11/2)/2"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1i\n",
+    "\n",
+    "sp.diff(sp.sqrt(x)*x**6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "bbf023dd-5fa8-41f8-b510-3c5603ed7b4e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 3 x^{2} + 1$"
+      ],
+      "text/plain": [
+       "3*x**2 + 1"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1j\n",
+    "\n",
+    "sp.diff(x*(x**2+1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "8f87685a-9c55-43cc-95ca-a64f3f4302b1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle - \\frac{3 x^{2} \\left(x^{2} + 4\\right)}{\\left(x^{3} - 1\\right)^{2}} + \\frac{2 x}{x^{3} - 1}$"
+      ],
+      "text/plain": [
+       "-3*x**2*(x**2 + 4)/(x**3 - 1)**2 + 2*x/(x**3 - 1)"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1k\n",
+    "\n",
+    "sp.diff((x**2+4)/(x**3-1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "d74306fb-303a-4f2d-b47e-9ead09e6e88f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{x^{2} \\left(- 2 x - 2\\right)}{\\left(x^{2} + 2 x\\right)^{2}} + \\frac{2 x}{x^{2} + 2 x}$"
+      ],
+      "text/plain": [
+       "x**2*(-2*x - 2)/(x**2 + 2*x)**2 + 2*x/(x**2 + 2*x)"
+      ]
+     },
+     "execution_count": 63,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1l\n",
+    "\n",
+    "sp.diff((x**2)/(x**2+2*x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "f3ee74e2-ff05-4ab1-8538-44ea7658d9ec",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{2 x + 4}{x - 2} - \\frac{x^{2} + 4 x + 2}{\\left(x - 2\\right)^{2}}$"
+      ],
+      "text/plain": [
+       "(2*x + 4)/(x - 2) - (x**2 + 4*x + 2)/(x - 2)**2"
+      ]
+     },
+     "execution_count": 64,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1m\n",
+    "\n",
+    "sp.diff((x**2+4*x+2)/(x-2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "36b2d1d4-37ff-4eea-8c63-2ebaf5e93dda",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle - \\frac{2 x \\left(x^{3} - 2 x\\right)}{\\left(x^{2} - 1\\right)^{2}} + \\frac{3 x^{2} - 2}{x^{2} - 1}$"
+      ],
+      "text/plain": [
+       "-2*x*(x**3 - 2*x)/(x**2 - 1)**2 + (3*x**2 - 2)/(x**2 - 1)"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2a\n",
+    "\n",
+    "sp.diff((x**3-2*x)/(x**2-1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "ee9c28db-b506-4efc-9b9e-1af4daac51be",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 2 x \\left(x^{2} - 1\\right) + 2 x \\left(x^{2} + 1\\right)$"
+      ],
+      "text/plain": [
+       "2*x*(x**2 - 1) + 2*x*(x**2 + 1)"
+      ]
+     },
+     "execution_count": 66,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2b\n",
+    "\n",
+    "sp.diff((x**2+1)*(x**2-1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "fb6e227b-00ed-408e-a99d-8b2093d593b8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle - \\frac{3 x^{2} \\cdot \\left(3 x - 4\\right)}{\\left(x^{3} + 7\\right)^{2}} + \\frac{3}{x^{3} + 7}$"
+      ],
+      "text/plain": [
+       "-3*x**2*(3*x - 4)/(x**3 + 7)**2 + 3/(x**3 + 7)"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2c\n",
+    "\n",
+    "sp.diff((3*x-4)/(x**3+7))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "e1040d56-44a3-47ef-9a78-ad78f39e424a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\left(15 x^{2} + 30\\right) \\left(x^{3} + 6 x\\right)^{4}$"
+      ],
+      "text/plain": [
+       "(15*x**2 + 30)*(x**3 + 6*x)**4"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Oppgave 21\n",
+    "#1a\n",
+    "\n",
+    "sp.diff((x**3+6*x)**5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "9f273660-ff73-4899-81d4-de8e1878e821",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{2 x}{\\sqrt{2 x^{2} + 5}}$"
+      ],
+      "text/plain": [
+       "2*x/sqrt(2*x**2 + 5)"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1b\n",
+    "\n",
+    "sp.diff(sp.sqrt(2*x**2+5))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "d5b7a896-0805-4b20-9169-c47b201b17e4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle - \\frac{128 x^{5}}{\\left(x^{2} + 3\\right)^{5}} + \\frac{64 x^{3}}{\\left(x^{2} + 3\\right)^{4}}$"
+      ],
+      "text/plain": [
+       "-128*x**5/(x**2 + 3)**5 + 64*x**3/(x**2 + 3)**4"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1c\n",
+    "\n",
+    "sp.diff(((2*x)/(x**2+3))**4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "804ef911-472c-476e-9350-2184feb81e06",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 12.0 x^{3} \\left(2 x^{4} + 9\\right)^{0.5}$"
+      ],
+      "text/plain": [
+       "12.0*x**3*(2*x**4 + 9)**0.5"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1d\n",
+    "\n",
+    "sp.diff((2*x**4+9)**(3/2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "79dec377-2fa5-48e9-a349-d650192d7489",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle - \\frac{x}{\\left(x^{2} + 1\\right)^{\\frac{3}{2}}}$"
+      ],
+      "text/plain": [
+       "-x/(x**2 + 1)**(3/2)"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1e\n",
+    "\n",
+    "sp.diff((1)/(sp.sqrt(1+x**2)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "8a6abb6a-a9ce-48a1-8651-89d49891b4dd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle x^{2} \\cdot \\left(6 x + 6\\right) \\left(x^{2} + 2 x\\right)^{2} + 2 x \\left(x^{2} + 2 x\\right)^{3}$"
+      ],
+      "text/plain": [
+       "x**2*(6*x + 6)*(x**2 + 2*x)**2 + 2*x*(x**2 + 2*x)**3"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1f\n",
+    "\n",
+    "sp.diff(x**2*(x**2+2*x)**3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "1c3c33ec-e018-4daf-b233-335ed4608f68",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{x^{2} \\left(x - 1\\right)}{\\sqrt{x^{2} - 2 x}} + 2 x \\sqrt{x^{2} - 2 x}$"
+      ],
+      "text/plain": [
+       "x**2*(x - 1)/sqrt(x**2 - 2*x) + 2*x*sqrt(x**2 - 2*x)"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1g\n",
+    "\n",
+    "sp.diff(x**2*(sp.sqrt(x**2-2*x)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "c93f296c-9ca6-4072-a3c7-9c85d19696d0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{x^{2} \\left(- 6 x - 3\\right)}{\\left(x^{2} + x\\right)^{4}} + \\frac{2 x}{\\left(x^{2} + x\\right)^{3}}$"
+      ],
+      "text/plain": [
+       "x**2*(-6*x - 3)/(x**2 + x)**4 + 2*x/(x**2 + x)**3"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1h\n",
+    "\n",
+    "sp.diff((x**2)/(x**2+x)**3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "4d5d7545-2c46-4af6-8b34-3833a2ad61d6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 9 x^{2} \\left(x^{2} + 1\\right)^{2} \\left(x^{3} + 1\\right)^{2} + 4 x \\left(x^{2} + 1\\right) \\left(x^{3} + 1\\right)^{3}$"
+      ],
+      "text/plain": [
+       "9*x**2*(x**2 + 1)**2*(x**3 + 1)**2 + 4*x*(x**2 + 1)*(x**3 + 1)**3"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1i\n",
+    "\n",
+    "sp.diff((x**2+1)**2*(x**3+1)**3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "e89cdc95-8524-4a82-a4e1-02ca8f55b18b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\left(12 x + 4\\right) \\left(3 x^{2} + 2 x\\right)$"
+      ],
+      "text/plain": [
+       "(12*x + 4)*(3*x**2 + 2*x)"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2a\n",
+    "\n",
+    "sp.diff(sp.sqrt(3*x**2+2*x)**4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "149ded09-2dd2-41a5-a06f-357a2185165e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{15 x^{2} \\left(x^{3} + 3\\right)^{4}}{\\left(x^{2} + 3\\right)^{4}} - \\frac{8 x \\left(x^{3} + 3\\right)^{5}}{\\left(x^{2} + 3\\right)^{5}}$"
+      ],
+      "text/plain": [
+       "15*x**2*(x**3 + 3)**4/(x**2 + 3)**4 - 8*x*(x**3 + 3)**5/(x**2 + 3)**5"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2b\n",
+    "\n",
+    "sp.diff((x**3+3)**5/(x**2+3)**4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "112ff904-d96c-4241-abbe-3ed1a776b4b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{x^{3}}{\\sqrt{x^{2} + 1}} + 2 x \\sqrt{x^{2} + 1}$"
+      ],
+      "text/plain": [
+       "x**3/sqrt(x**2 + 1) + 2*x*sqrt(x**2 + 1)"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2c\n",
+    "\n",
+    "sp.diff((sp.sqrt(x**2+1))*x**2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "fd6c95fe-9282-4a44-a684-07863f04f990",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{\\left(18 x + 6\\right) \\left(3 x^{2} + 2 x\\right)^{2}}{x^{2}} - \\frac{2 \\left(3 x^{2} + 2 x\\right)^{3}}{x^{3}}$"
+      ],
+      "text/plain": [
+       "(18*x + 6)*(3*x**2 + 2*x)**2/x**2 - 2*(3*x**2 + 2*x)**3/x**3"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2d\n",
+    "\n",
+    "sp.diff(((2*x+3*x**2)**3)/(x**2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2c9f6508-ff76-41aa-a856-b3860c9a5f97",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2e\n",
+    "\n",
+    "sp.diff()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "4ebf2ed3-394c-4a93-b92b-c6aaafd0c3ac",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle - \\frac{2 x^{6}}{\\left(x^{4} - 1\\right)^{\\frac{3}{2}}} + \\frac{3 x^{2}}{\\sqrt{x^{4} - 1}}$"
+      ],
+      "text/plain": [
+       "-2*x**6/(x**4 - 1)**(3/2) + 3*x**2/sqrt(x**4 - 1)"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2f\n",
+    "\n",
+    "sp.diff((x**3)/(sp.sqrt(x**4-1)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "e71e907a-ceaf-41e8-b864-f97646ed07bc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{1}{x}$"
+      ],
+      "text/plain": [
+       "1/x"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Oppgave 22\n",
+    "#1a\n",
+    "\n",
+    "sp.diff(sp.log(5*x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "5dbc4c1f-9cd2-44b4-9474-18ba621d3f23",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle - 2.0 \\cdot 2.71828182845905^{- 2 x}$"
+      ],
+      "text/plain": [
+       "-2.0/2.71828182845905**(2*x)"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import math\n",
+    "\n",
+    "#1b\n",
+    "\n",
+    "sp.diff(math.e**(-2*x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "690004d7-f379-49e2-95ff-d4c36b96e9f7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{1}{x}$"
+      ],
+      "text/plain": [
+       "1/x"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1c\n",
+    "\n",
+    "sp.diff(sp.log(12*x)-3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "bf36511a-8348-4192-93d8-fad833ab6a5f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 2^{x} \\log{\\left(2 \\right)}$"
+      ],
+      "text/plain": [
+       "2**x*log(2)"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1d\n",
+    "\n",
+    "sp.diff(2**x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "58df6019-76e4-49af-81ac-8b0ea5cb0379",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 3.0 \\cdot 2.71828182845905^{3 x + 5}$"
+      ],
+      "text/plain": [
+       "3.0*2.71828182845905**(3*x + 5)"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1e\n",
+    "\n",
+    "sp.diff(math.e**(3*x+5))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "b5e70370-a0e7-4c0e-b9ad-daf6b92aa417",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{5 x^{4}}{x^{5} + 1}$"
+      ],
+      "text/plain": [
+       "5*x**4/(x**5 + 1)"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1f\n",
+    "\n",
+    "sp.diff(sp.log(x**5+1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "652f648a-c3e4-47e6-a639-59b1c9c3ce79",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 2.71828182845905^{4 x^{2} + 8 x} \\left(8.0 x + 8.0\\right)$"
+      ],
+      "text/plain": [
+       "2.71828182845905**(4*x**2 + 8*x)*(8.0*x + 8.0)"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1g\n",
+    "\n",
+    "sp.diff(math.e**(4*x**2+8*x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "274abe49-def4-449d-ad4a-e07c51c3dfe6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 0$"
+      ],
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1h\n",
+    "\n",
+    "sp.diff(sp.log(1)/(x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "429f8793-61d5-4cd6-876d-319bf6ebef44",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 12.0 \\cdot 2.71828182845905^{4 x} + \\frac{6}{x}$"
+      ],
+      "text/plain": [
+       "12.0*2.71828182845905**(4*x) + 6/x"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1i\n",
+    "\n",
+    "sp.diff(6*sp.log(x)+3*math.e**(4*x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "7982e381-a54b-42aa-95d9-2ce75d5992b1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle - 1.0 \\cdot 2.71828182845905^{- x} x + 2.71828182845905^{- x}$"
+      ],
+      "text/plain": [
+       "-1.0*x/2.71828182845905**x + 2.71828182845905**(-x)"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1j\n",
+    "\n",
+    "sp.diff(x*math.e**-x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "93dff882-cd55-4747-9368-e43c8bd704a5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{2 x^{3}}{x^{2} + 2} + 2 x \\log{\\left(x^{2} + 2 \\right)}$"
+      ],
+      "text/plain": [
+       "2*x**3/(x**2 + 2) + 2*x*log(x**2 + 2)"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#1k\n",
+    "\n",
+    "sp.diff(x**2*sp.log(x**2+2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "94d430b4-7c9b-4a8c-88dd-5e60dcb78cad",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 2.0 \\cdot 2.71828182845905^{2 x} x^{3} + 3 \\cdot 2.71828182845905^{2 x} x^{2}$"
+      ],
+      "text/plain": [
+       "2.0*2.71828182845905**(2*x)*x**3 + 3*2.71828182845905**(2*x)*x**2"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2a\n",
+    "\n",
+    "sp.diff(x**3*math.e**(2*x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "4c4cfdf3-8b50-4f5b-92b6-0d1914965452",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{\\left(x^{2} + 1\\right) \\left(- \\frac{2 x \\left(x^{2} - 1\\right)}{\\left(x^{2} + 1\\right)^{2}} + \\frac{2 x}{x^{2} + 1}\\right)}{x^{2} - 1}$"
+      ],
+      "text/plain": [
+       "(x**2 + 1)*(-2*x*(x**2 - 1)/(x**2 + 1)**2 + 2*x/(x**2 + 1))/(x**2 - 1)"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2b\n",
+    "\n",
+    "sp.diff(sp.log((x**2-1)/(x**2+1)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "a481b6df-83ce-408c-a5d7-b45c291895bc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\frac{2 x^{3}}{x^{2} + 2} + 2 x \\log{\\left(x^{2} + 2 \\right)}$"
+      ],
+      "text/plain": [
+       "2*x**3/(x**2 + 2) + 2*x*log(x**2 + 2)"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2c\n",
+    "\n",
+    "sp.diff(x**2*sp.log(x**2+2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "97716908-0cc4-41cd-bd20-1c2049c1ab98",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle - \\frac{2 \\cdot 2.71828182845905^{- x} x}{\\left(x^{2} + 1\\right)^{2}} - \\frac{1.0 \\cdot 2.71828182845905^{- x}}{x^{2} + 1}$"
+      ],
+      "text/plain": [
+       "-2*x/(2.71828182845905**x*(x**2 + 1)**2) - 1.0/(2.71828182845905**x*(x**2 + 1))"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#2d\n",
+    "\n",
+    "sp.diff((math.e**-x)/(x**2+1))"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
